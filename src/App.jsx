@@ -10,12 +10,12 @@ function App() {
 
   return (
     <>
-    <h1>tekst</h1>
+   
     <Header></Header>
     <MainCompomenet></MainCompomenet>
     <Footer></Footer>
     
-    
+    {/*npm install react-bootstrap bootstrap @fortawesome/fontawesome-free*/}
     </>
   )
 }
