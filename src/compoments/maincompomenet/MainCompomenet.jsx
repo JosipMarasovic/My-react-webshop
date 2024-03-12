@@ -1,11 +1,12 @@
-
+import { Outlet } from "react-router-dom"
 
 function MainCompomenet(){
 
     return(
         <>
+        <h2>Ovo je main</h2>
 
-        <h2>OVo je tekst</h2>
+       
         </>
     )
 }

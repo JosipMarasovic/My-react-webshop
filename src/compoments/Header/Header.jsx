@@ -1,17 +1,19 @@
 
 import React from 'react';
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Nav, Form, FormControl, Button, NavLink } from 'react-bootstrap';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBasketShopping } from '@fortawesome/free-solid-svg-icons';
 import logo from './logo.png';
 import './header.css'
+import { Link } from 'react-router-dom';
 
 function Header(){
 
   return(
     <Navbar bg="light" expand="lg" className="navbar">
-    <Navbar.Brand href="#home">
+    <Navbar.Brand
+       href="#home">
       <img
         src={logo}
         height="30"
@@ -27,10 +29,10 @@ function Header(){
       </Form>
     </div>
     <Nav className="nav-links">
-      <Nav.Link href="#about">About</Nav.Link>
-      <Nav.Link href="#blog">Blog</Nav.Link>
-      <Nav.Link href="#popular">Popular</Nav.Link>
-      <Nav.Link href="#basket">
+      <Nav.Link as={ Link } to="/about">About</Nav.Link>
+      <Nav.Link as={ Link } to="/blog">Blog</Nav.Link>
+      <Nav.Link as={ Link } to="/popular">Popular</Nav.Link>
+      <Nav.Link as={ Link } to="/basket">
         <FontAwesomeIcon icon={faBasketShopping} /> 
       </Nav.Link>
     </Nav>
