@@ -12,6 +12,7 @@
 .search-form {
     display: flex;
     align-items: center;
+    width: 50%;
   }
   .search-form .form-control {
     margin-right: 10px; 
@@ -20,4 +21,20 @@
 
   .navbar-brand {
     margin-left: 20px;
+  }
+  .navbar-brand em {
+    font-size: 1.5rem;
+  }
+
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+
+  }
+
+  .social-icons{
+    margin-top: 20px;
   }
