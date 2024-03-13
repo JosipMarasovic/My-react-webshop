@@ -3,7 +3,7 @@
 
 import './App.css'
 import Header from './compoments/Header/Header'
-import MainCompomenet from './compoments/maincompomenet/MainCompomenet'
+
 import Footer from './compoments/Footer/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes ,Route} from 'react-router-dom'
