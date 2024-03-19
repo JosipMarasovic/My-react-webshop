@@ -11,6 +11,9 @@ import Home from './compoments/Home/Home.jsx';
 import Basket from './compoments/Basket/Basket.jsx';
 import PopularContainer from './compoments/Popular/PopularContainer.jsx';
 import { AppProvider } from './Context/AppContext.jsx';
+import AllItems from './compoments/ItemsAll/AllItems.jsx';
+
+
 
 
 function App() {
@@ -28,15 +31,14 @@ function App() {
   return (
     <>
 
-    <AppProvider>
-      
-    </AppProvider>
+   
     <BrowserRouter>
       <Routes>
        <Route path="/" element={<AppWrapperComponent/>}>
         <Route index element={<Home/>}></Route>
         <Route path='/about' element={<About/>}/>
         <Route path='/blog' element={<Blog />}/>
+        <Route path='/items/:category' element={<AllItems/>}/>
         <Route path='/popular/*' element={<PopularContainer smartphoneProducts={smartphoneProducts} />}/>
         <Route path='/basket' element={<Basket/>}/>
        </Route>

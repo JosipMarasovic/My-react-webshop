@@ -4,6 +4,7 @@ import BlogPreview from "../Blog/BlogPreview.jsx";
 import NewsletterForm from "../NewsLetter/NewsLetter.jsx";
 import { useEffect, useState } from "react";
 
+
 function Home(){
 
     const [categoriesList, setCategoriesList] = useState([])

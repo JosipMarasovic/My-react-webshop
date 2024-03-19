@@ -19,7 +19,8 @@ function ProductCard({ product }) {
                 <Card.Text>Discount: {product.discountPercentage}%</Card.Text>
                 <Card.Text>Rating: {product.rating}</Card.Text>
                 <Card.Text>Stock: {product.stock}</Card.Text>
-                <Button className='custom-button'>Add to Cart</Button>
+               <Button className='custom-button m-3'>Add to Cart</Button>    
+                <Button className='custom-button'>Product Detail</Button>
             </Card.Body>
         </Card>
     );

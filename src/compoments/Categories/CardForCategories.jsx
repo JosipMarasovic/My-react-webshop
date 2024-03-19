@@ -15,7 +15,7 @@ function CardForCategories(props) {
           Some quick example text to build on the card title and make up the bulk of the card's content.
         </Card.Text>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <Link to="/detailProduct" className="btn custom-button">All items</Link>
+          <Link to="/items/laptops" className="btn custom-button">All items</Link>
           <Link to="/popular" className="btn custom-button">Popular</Link>
         </div>
       </Card.Body>

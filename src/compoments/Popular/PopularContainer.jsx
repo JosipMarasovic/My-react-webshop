@@ -1,10 +1,11 @@
+import Popular from "./Popular";
 
-import PopularDisplayAll from "./PopularDisplayAll";
 
 
 function PopularContainer({ smartphoneProducts }) {
+
     return (
-        <PopularDisplayAll smartphoneProducts={smartphoneProducts} />
+      <Popular smartphoneProducts={smartphoneProducts} />
     );
   }
   
