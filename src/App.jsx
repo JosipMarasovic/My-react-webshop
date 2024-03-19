@@ -10,14 +10,12 @@ import Blog from './compoments/Blog/Blog.jsx'
 import Home from './compoments/Home/Home.jsx';
 import Basket from './compoments/Basket/Basket.jsx';
 import PopularContainer from './compoments/Popular/PopularContainer.jsx';
+import { AppProvider } from './Context/AppContext.jsx';
 
 
 function App() {
   const [smartphoneProducts, setSmartphoneProducts] = useState([]);
   
-  
- 
-
   useEffect(() => {
     fetch('https://dummyjson.com/products?limit=10')
       .then((response) => response.json())
@@ -27,10 +25,12 @@ function App() {
       })
   }, []);
 
-  
-
   return (
     <>
+
+    <AppProvider>
+      
+    </AppProvider>
     <BrowserRouter>
       <Routes>
        <Route path="/" element={<AppWrapperComponent/>}>
@@ -43,7 +43,6 @@ function App() {
       </Routes>
     </BrowserRouter>
     
-   
     </>
   )
 }
