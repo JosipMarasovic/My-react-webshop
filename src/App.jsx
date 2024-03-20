@@ -37,6 +37,7 @@ function App() {
        <Route path="/" element={<AppWrapperComponent/>}>
         <Route index element={<Home/>}></Route>
         <Route path='/about' element={<About/>}/>
+        <Route path='/blog/:id' element={<Blog />}/>
         <Route path='/blog' element={<Blog />}/>
         <Route path='/items/:category' element={<AllItems/>}/>
         <Route path='/popular/*' element={<PopularContainer smartphoneProducts={smartphoneProducts} />}/>

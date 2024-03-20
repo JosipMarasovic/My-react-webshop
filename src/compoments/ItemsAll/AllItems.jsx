@@ -1,15 +1,30 @@
-import { useParams } from "react-router-dom"
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
+function AllItems() {
+    const { category } = useParams();
+    const [items, setItems] = useState([]);
 
-function AllItems(){
-    const { category } = useParams()
-    console.log(category)
-    return(
+    useEffect(() => {
+        
+        fetch(`https://dummyjson.com/products?category=${category}`)
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+                setItems(data.products);
+            });
+    }, [category]);
+
+    return (
         <>
-
-        <h3>Ovo je All items</h3>
+            <h3>All Items in {category}</h3>
+            <ul>
+                {items.map((item, index) => (
+                    <li key={index}>{item.title}</li>
+                ))}
+            </ul>
         </>
-    )
+    );
 }
 
-export default AllItems
+export default AllItems;

@@ -30,6 +30,7 @@ function BlogPreview() {
                 {blogPosts.map(post => (
                     <Col key={post.id} className="mb-4">
                             <SingleCardDisplay
+                            id={post.id}
                                 title={post.title}
                                 content={post.content}
                             />
