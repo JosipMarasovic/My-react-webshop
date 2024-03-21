@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 function AllItems() {
@@ -6,15 +6,14 @@ function AllItems() {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        
-        fetch(`https://dummyjson.com/products?category=${category}`)
+        fetch(`https://dummyjson.com/products/category/${category}`)
             .then((response) => response.json())
             .then((data) => {
-                console.log( "all idem" ,data);
-                setItems(data.products);
+                console.log("Items for category:", category, data);
+                const products = data.products || []; 
+                setItems(products);
             });
     }, [category]);
-
 
     return (
         <>
