@@ -27,7 +27,7 @@ function Blog() {
     const [selectedPost,setSelectedPost] = useState(initialBlogPosts[0])
 
     function ChangeBlogPosts(post){
-        
+
         setSelectedPost(post) 
     }
     return (

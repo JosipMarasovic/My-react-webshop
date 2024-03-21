@@ -10,10 +10,11 @@ function AllItems() {
         fetch(`https://dummyjson.com/products?category=${category}`)
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
+                console.log( "all idem" ,data);
                 setItems(data.products);
             });
     }, [category]);
+
 
     return (
         <>

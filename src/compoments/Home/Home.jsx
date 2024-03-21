@@ -1,6 +1,5 @@
 import Categories from "../Categories/Categories.jsx";
 import Hero from "../Hero/Hero.jsx";
-import BlogPreview from "../Blog/BlogPreview.jsx";
 import NewsletterForm from "../NewsLetter/NewsLetter.jsx";
 import { useEffect, useState } from "react";
 
