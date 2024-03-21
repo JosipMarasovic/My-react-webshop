@@ -35,11 +35,10 @@ function App() {
    
     <BrowserRouter>
       <Routes>
-        <img src="https://images.unsplash.com/photo-1707343848610-16f9afe1ae23" alt="" width={40} height={50} />
+      
        <Route path="/" element={<AppWrapperComponent/>}>
         <Route index element={<Home/>}></Route>
         <Route path='/about' element={<About/>}/>
-        <Route path='/blog/:id' element={<Blog />}/>
         <Route path='/blog' element={<Blog />}/>
         <Route path='/items/:category' element={<AllItems/>}/>
         <Route path='/popular/*' element={<PopularContainer smartphoneProducts={smartphoneProducts} />}/>

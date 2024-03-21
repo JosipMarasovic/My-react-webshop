@@ -8,9 +8,6 @@ import { useEffect, useState } from "react";
 function Home(){
 
     const [categoriesList, setCategoriesList] = useState([])
-  
-
-
     useEffect (()=>{
         fetch('https://dummyjson.com/products/categories')
                .then(res => res.json())
@@ -25,7 +22,6 @@ function Home(){
         <>
             <Hero/>
             <Categories categories={categoriesList}/>
-            <BlogPreview/>
             <NewsletterForm/>
         </>
     );
