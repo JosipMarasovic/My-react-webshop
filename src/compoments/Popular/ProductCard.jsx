@@ -17,7 +17,7 @@ function ProductCard({ product }) {
                 <Card.Text>Brand: {product.brand}</Card.Text>
                 <Card.Text>Price: ${product.price}</Card.Text>
                 <Button className='custom-button m-3'>Add to Cart</Button>    
-                <Link to={"/productDetail"}  className="btn custom-button">Product Detail</Link>
+                <Link to={`/productDetail/${product.id}`}  className="btn custom-button">Product Detail</Link>
           
             </Card.Body>
         </Card>

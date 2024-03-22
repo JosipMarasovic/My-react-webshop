@@ -44,7 +44,7 @@ function App() {
         <Route path='/items/:category' element={<AllItems/>}/>
         <Route path='/popular/*' element={<PopularContainer smartphoneProducts={smartphoneProducts} />}/>
         <Route path='/basket' element={<Basket/>}/>
-        <Route path='/productDetail' element={<ProductDetail smartphoneProducts={smartphoneProducts}/>}/>
+        <Route path='/productDetail/:id' element={<ProductDetail smartphoneProducts={smartphoneProducts}/>}/>
        </Route>
       </Routes>
     </BrowserRouter>
