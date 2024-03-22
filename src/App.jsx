@@ -12,6 +12,7 @@ import Basket from './compoments/Basket/Basket.jsx';
 import PopularContainer from './compoments/Popular/PopularContainer.jsx';
 import { AppProvider } from './Context/AppContext.jsx';
 import AllItems from './compoments/ItemsAll/AllItems.jsx';
+import ProductDetail from './compoments/Popular/ProductDetail.jsx';
 
 
 
@@ -43,6 +44,7 @@ function App() {
         <Route path='/items/:category' element={<AllItems/>}/>
         <Route path='/popular/*' element={<PopularContainer smartphoneProducts={smartphoneProducts} />}/>
         <Route path='/basket' element={<Basket/>}/>
+        <Route path='/productDetail' element={<ProductDetail smartphoneProducts={smartphoneProducts}/>}/>
        </Route>
       </Routes>
     </BrowserRouter>
